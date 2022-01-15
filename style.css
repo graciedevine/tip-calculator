@@ -1,10 +1,10 @@
 :root {
   --strong-cyan: hsl(172, 67%, 45%);
   --very-dark-cyan: hsl(183, 100%, 15%);
-  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --darker-grayish-cyan: hsl(186, 14%, 43%);
   --dark-grayish-cyan: hsl(184, 14%, 56%);
   --light-grayish-cyan: hsl(185, 41%, 84%);
-  --light-grayish-cyan: hsl(189, 41%, 97%);
+  --lighter-grayish-cyan: hsl(189, 41%, 97%);
   --white: hsl(0, 0%, 100%);
 }
 
@@ -32,10 +32,36 @@ p {
   font-family: "Space Mono", monospace;
 }
 
+.main {
+  background-color: var(--white);
+}
+
+.bill-title {
+  color: var(--darker-grayish-cyan);
+}
+
+.tip-button,
+p {
+  color: var(--white);
+  background-color: var(--very-dark-cyan);
+  border-radius: 25px;
+  padding: 1em 3em;
+  font-family: "Space Mono", monospace;
+}
+
+.custom-button {
+  color: var(--darker-grayish-cyan);
+  background-color: var(---light-grayish-cyan);
+  border-radius: 25px;
+  padding: 1em 3em;
+  font-family: "Space Mono", monospace;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }

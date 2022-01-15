@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="style.css" rel="styleshet" />
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="style.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
@@ -14,50 +14,51 @@
 
 <body>
   <main class="main">
-    <div class="app-head">
-      <h1 class="app-name">S P L I T T E R</h1>
-    </div>
-    <div class="bill-section">
-      <div class="bill-head">
-        <h2 class="bill-title">Bill</h1>
+    <div class="container">
+      <div class="app-head">
+        <h1 class="app-name">S P L I T T E R</h1>
       </div>
-      <div class="bill-total">
+      <div class="bill-section">
+        <div class="bill-head">
+          <h2 class="bill-title">Bill</h2>
+        </div>
+        <div class="bill-total">
+        </div>
+        <div class="tip-head">
+          <h2 class="bill-title">Select Tip %</h2>
+        </div>
+        <div class="tip-buttons">
+          <a href="#" class="tip-button">5%</a>
+          <a href="#" class="tip-button">10%</a>
+          <a href="#" class="tip-button">15%</a>
+          <a href="#" class="tip-button">25%</a>
+          <a href="#" class="tip-button">50%</a>
+          <a href="#" class="custom-button">Custom</a>
+        </div>
+        <div class="people-head">
+          <h2 class="bill-title">Number of People</h2>
+        </div>
       </div>
-      <div class="tip-head">
-        <h2 class="bill-title">Select Tip %</h2>
-      </div>
-      <div class="tip-buttons">
-        5%
-        10%
-        15%
-        25%
-        50%
-        Custom
-      </div>
-      <div class="people-head">
-        <h2 class="bill-title">Number of People</h2>
+      <div class="tip-section">
+        <div class="tip-amount">
+          <h2 class="tip-title">Tip Amount
+            / person</h2>
+        </div>
+        <div class="total-per-person">
+          <h2 class="tip-title">Total
+            / person</h2>
+        </div>
+        <div class="reset">
+          <a href="#" class="reset-button">Reset</a>
+        </div>
       </div>
     </div>
 
-    <div class="tip-section">
-      <div class="tip-amount">
-        <h2 class="tip-title">Tip Amount
-          / person</h2>
-      </div>
-      <div class="total-per-person">
-        <h2 class="tip-title">Total
-          / person</h2>
-      </div>
-      <div class="reset">
-        Reset
-      </div>
-    </div>
   </main>
-
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Gracie</a>.
-  </div>
+    Coded by <a href="https://github.com/graciedevine/tip-calculator">Gracie Devine</a>.
+    </div>
 </body>
 
 </html>
