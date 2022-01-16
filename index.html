@@ -14,18 +14,22 @@
 
 <body>
   <main class="main">
-    <div class="container">
-      <div class="app-head">
-        <h1 class="app-name">S P L I T T E R</h1>
+    <div class="flex container">
+      <div class="flex-item app-head">
+        <img src="images/logo.svg">
       </div>
-      <div class="bill-section">
+      <div class="flex bill-section">
         <div class="bill-head">
-          <h2 class="bill-title">Bill</h2>
+          <h1 class="bill-title">Bill</h1>
+          <div class="dollar-sign">
+            <img src="images/icon-dollar.svg">
+          </div>
+          <div class="bill-bar"><input type="text" class="input-bill"></div>
         </div>
         <div class="bill-total">
         </div>
         <div class="tip-head">
-          <h2 class="bill-title">Select Tip %</h2>
+          <h1 class="bill-title">Select Tip %</h1>
         </div>
         <div class="tip-buttons">
           <a href="#" class="tip-button">5%</a>
@@ -36,10 +40,15 @@
           <a href="#" class="custom-button">Custom</a>
         </div>
         <div class="people-head">
-          <h2 class="bill-title">Number of People</h2>
+          <h1 class="bill-title">Number of People</h1>
+          <div class="people-icon">
+            <img src="images/icon-person.svg">
+          </div>
+          <div class="people-bar"><input type="text" class="input-people"></div>
         </div>
       </div>
-      <div class="tip-section">
+
+      <div class="flex tip-section">
         <div class="tip-amount">
           <h2 class="tip-title">Tip Amount
             / person</h2>

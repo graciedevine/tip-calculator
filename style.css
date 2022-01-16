@@ -19,6 +19,7 @@
   padding: 0.5em;
   width: 100%;
 }
+
 .flex {
   display: flex;
   padding: 1em;
@@ -32,12 +33,38 @@ p {
   font-family: "Space Mono", monospace;
 }
 
+h1 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
 .main {
+  background-color: var(--dark-grayish-cyan);
+}
+
+.container {
+  flex-direction: column;
+}
+
+.bill-section {
+  flex-direction: column;
   background-color: var(--white);
+  border-radius: 5px;
 }
 
 .bill-title {
   color: var(--darker-grayish-cyan);
+}
+
+.tip-section {
+  flex-direction: column;
+  background-color: var(--very-dark-cyan);
+  border-radius: 5px;
+}
+
+.tip-title,
+p {
+  color: var(--white);
 }
 
 .tip-button,
@@ -45,7 +72,7 @@ p {
   color: var(--white);
   background-color: var(--very-dark-cyan);
   border-radius: 25px;
-  padding: 1em 3em;
+  padding: 0.5em 1em;
   font-family: "Space Mono", monospace;
 }
 
@@ -53,13 +80,21 @@ p {
   color: var(--darker-grayish-cyan);
   background-color: var(---light-grayish-cyan);
   border-radius: 25px;
-  padding: 1em 3em;
+  padding: 0.5em 1em;
   font-family: "Space Mono", monospace;
+}
+
+.reset-button {
+  color: var(--very-dark-cyan);
+  background-color: var(--strong-cyan);
+  padding: 0.5em 3em;
+  border-radius: 5px;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  background-color: var(--dark-grayish-cyan);
 }
 
 .attribution a {
