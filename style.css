@@ -14,8 +14,17 @@
   box-sizing: border-box;
 }
 
+body {
+  min-height: 100vh;
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--dark-grayish-cyan);
+}
+
 .flex-item {
-  box-sizing: border-box;
   padding: 0.5em;
   width: 100%;
 }
@@ -36,14 +45,29 @@ p {
 h1 {
   font-size: 1rem;
   font-weight: 600;
+  font-family: "Space Mono", monospace;
 }
 
-.main {
-  background-color: var(--dark-grayish-cyan);
+h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Space Mono", monospace;
+}
+
+.app-head {
+  margin: 1em 1em;
 }
 
 .container {
   flex-direction: column;
+  align-items: center;
+}
+
+.wrapper {
+  background-color: var(--white);
+  border-radius: 15px;
+  width: 100%;
+  justify-content: center;
 }
 
 .bill-section {
@@ -62,25 +86,23 @@ h1 {
   border-radius: 5px;
 }
 
-.tip-title,
-p {
+.tip-title {
   color: var(--white);
 }
 
-.tip-button,
-p {
+.tip-button {
   color: var(--white);
   background-color: var(--very-dark-cyan);
-  border-radius: 25px;
-  padding: 0.5em 1em;
+  border-radius: 10px;
+  padding: 0.5em 1.5em;
   font-family: "Space Mono", monospace;
 }
 
 .custom-button {
   color: var(--darker-grayish-cyan);
-  background-color: var(---light-grayish-cyan);
-  border-radius: 25px;
-  padding: 0.5em 1em;
+  background-color: var(--light-grayish-cyan);
+  border-radius: 10px;
+  padding: 0.5em 0.5em;
   font-family: "Space Mono", monospace;
 }
 
@@ -92,7 +114,13 @@ p {
 }
 
 .attribution {
-  font-size: 11px;
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100vw;
+  font-size: 1rem;
   text-align: center;
   background-color: var(--dark-grayish-cyan);
 }

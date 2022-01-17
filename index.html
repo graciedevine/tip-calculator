@@ -15,52 +15,55 @@
 <body>
   <main class="main">
     <div class="flex container">
-      <div class="flex-item app-head">
+      <div class="app-head">
         <img src="images/logo.svg">
       </div>
-      <div class="flex bill-section">
-        <div class="bill-head">
-          <h1 class="bill-title">Bill</h1>
-          <div class="dollar-sign">
-            <img src="images/icon-dollar.svg">
+      <div class="flex wrapper">
+        <div class="flex bill-section">
+          <div class="bill-head">
+            <h1 class="bill-title">Bill</h1>
+            <div class="dollar-sign">
+              <img src="images/icon-dollar.svg">
+            </div>
+            <div class="bill-bar"><input type="text" class="input-bill"></div>
           </div>
-          <div class="bill-bar"><input type="text" class="input-bill"></div>
-        </div>
-        <div class="bill-total">
-        </div>
-        <div class="tip-head">
-          <h1 class="bill-title">Select Tip %</h1>
-        </div>
-        <div class="tip-buttons">
-          <a href="#" class="tip-button">5%</a>
-          <a href="#" class="tip-button">10%</a>
-          <a href="#" class="tip-button">15%</a>
-          <a href="#" class="tip-button">25%</a>
-          <a href="#" class="tip-button">50%</a>
-          <a href="#" class="custom-button">Custom</a>
-        </div>
-        <div class="people-head">
-          <h1 class="bill-title">Number of People</h1>
-          <div class="people-icon">
-            <img src="images/icon-person.svg">
+          <div class="bill-total">
           </div>
-          <div class="people-bar"><input type="text" class="input-people"></div>
+          <div class="tip-head">
+            <h1 class="bill-title">Select Tip %</h1>
+          </div>
+          <div class="flex-item tip-buttons">
+            <a href="#" class="tip-button">5%</a>
+            <a href="#" class="tip-button">10%</a>
+            <a href="#" class="tip-button">15%</a>
+            <a href="#" class="tip-button">25%</a>
+            <a href="#" class="tip-button">50%</a>
+            <a href="#" class="custom-button">Custom</a>
+          </div>
+          <div class="people-head">
+            <h1 class="bill-title">Number of People</h1>
+            <div class="people-icon">
+              <img src="images/icon-person.svg">
+            </div>
+            <div class="people-bar"><input type="text" class="input-people"></div>
+          </div>
+        </div>
+        <div class="flex tip-section">
+          <div class="flex-item tip-amount">
+            <h2 class="tip-title">Tip Amount
+              / person</h2>
+          </div>
+          <div class="flex-item total-per-person">
+            <h2 class="tip-title">Total
+              / person</h2>
+          </div>
+          <div class="flex-item reset">
+            <a href="#" class="reset-button">Reset</a>
+          </div>
         </div>
       </div>
 
-      <div class="flex tip-section">
-        <div class="tip-amount">
-          <h2 class="tip-title">Tip Amount
-            / person</h2>
-        </div>
-        <div class="total-per-person">
-          <h2 class="tip-title">Total
-            / person</h2>
-        </div>
-        <div class="reset">
-          <a href="#" class="reset-button">Reset</a>
-        </div>
-      </div>
+
     </div>
 
   </main>
