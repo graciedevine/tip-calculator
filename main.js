@@ -1,12 +1,13 @@
 function getTipAmount(cost, numberOfPeople, tipPercentage) {
-    // tipPercentage = [0.5, 0.10, 0.15, 0.20, 0.25, 0.50, 0.xx]
-    tipAmount === cost / numberOfPeople * tipPercentage;
-    return Math.round(tipAmount)
+    const tipAmount = cost / numberOfPeople * tipPercentage / 100;
+    return tipAmount;
 }
 
-function getTotalAmount(cost, numberOfPeople, tipPlus) {
-    // tipPlus = [1.5, 1.10, 1.15, 1.20, 1.50, 1.xx]
-    totalAmount === cost / numberOfPeople * tipPlus;
-    return Math.round(totalAmount)
+function getTotalAmount(cost, numberOfPeople, tipPercentage) {
+    const totalAmount = cost / numberOfPeople + getTipAmount(cost, numberOfPeople, tipPercentage);
+    return totalAmount;
 }
+
+console.log(getTotalAmount(142.55, 5, 15))
+console.log(getTipAmount(142.55, 5, 15))
 
