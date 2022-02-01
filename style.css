@@ -15,7 +15,7 @@
 }
 
 body {
-  min-height: 100vh;
+  min-height: 90vh;
   padding: 0.5em;
   display: flex;
   justify-content: center;
@@ -68,6 +68,7 @@ h2 {
   border-radius: 15px;
   width: 100%;
   justify-content: center;
+  flex-direction: column;
 }
 
 .bill-section {
@@ -80,6 +81,16 @@ h2 {
   color: var(--darker-grayish-cyan);
 }
 
+.dollar-sign {
+  justify-content: center;
+}
+
+.input-bill {
+  background-color: var(--lighter-grayish-cyan);
+  border-radius: 5px;
+  width: 100%;
+}
+
 .tip-section {
   flex-direction: column;
   background-color: var(--very-dark-cyan);
@@ -90,19 +101,29 @@ h2 {
   color: var(--white);
 }
 
+.tip-buttons {
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 0.5em;
+  justify-content: center;
+}
+
 .tip-button {
   color: var(--white);
   background-color: var(--very-dark-cyan);
-  border-radius: 10px;
-  padding: 0.5em 1.5em;
+  border-radius: 5px;
+  padding: 0.5em 3em;
   font-family: "Space Mono", monospace;
 }
 
 .custom-button {
   color: var(--darker-grayish-cyan);
   background-color: var(--light-grayish-cyan);
-  border-radius: 10px;
-  padding: 0.5em 0.5em;
+  border-radius: 5px;
+  padding: 0.5em 2em;
   font-family: "Space Mono", monospace;
 }
 
