@@ -38,20 +38,27 @@ a {
   text-decoration: none;
 }
 
-p {
+p,
+h1,
+h2,
+.per-person {
   font-family: "Space Mono", monospace;
 }
 
-h1 {
+h1,
+h2,
+.per-person {
   font-size: 1rem;
-  font-weight: 600;
-  font-family: "Space Mono", monospace;
+  font-weight: 900;
 }
 
 h2 {
-  font-size: 1rem;
+  font-weight: 600;
+}
+
+.per-person {
   font-weight: 500;
-  font-family: "Space Mono", monospace;
+  color: var(--dark-grayish-cyan);
 }
 
 .app-head {
@@ -69,12 +76,14 @@ h2 {
   width: 100%;
   justify-content: center;
   flex-direction: column;
+  margin-top: 1em;
 }
 
 .bill-section {
   flex-direction: column;
   background-color: var(--white);
   border-radius: 5px;
+  margin-top: 1em;
 }
 
 .bill-title {
@@ -97,9 +106,23 @@ h2 {
   border-radius: 5px;
 }
 
+.tip-head {
+  margin-top: 0.5em;
+}
+
 .tip-title {
   color: var(--white);
 }
+
+.input-people {
+  background-color: var(--lighter-grayish-cyan);
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* .input-per-person {
+
+} */
 
 .tip-buttons {
   flex-direction: row;
@@ -111,27 +134,47 @@ h2 {
   justify-content: center;
 }
 
-.tip-button {
+.tip-button,
+.tip-button-five,
+.tip-button-ten,
+.custom-button {
   color: var(--white);
   background-color: var(--very-dark-cyan);
   border-radius: 5px;
   padding: 0.5em 3em;
   font-family: "Space Mono", monospace;
+  font-weight: 600;
+}
+
+.tip-button-five {
+  padding: 0.5em 3.3em;
+}
+
+.tip-button-ten {
+  padding: 0.5em 3em;
 }
 
 .custom-button {
   color: var(--darker-grayish-cyan);
   background-color: var(--light-grayish-cyan);
-  border-radius: 5px;
   padding: 0.5em 2em;
-  font-family: "Space Mono", monospace;
+}
+
+.people-head {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.reset {
+  justify-content: center;
 }
 
 .reset-button {
   color: var(--very-dark-cyan);
   background-color: var(--strong-cyan);
-  padding: 0.5em 3em;
+  padding: 1em 5em;
   border-radius: 5px;
+  font-weight: 600;
 }
 
 .attribution {
