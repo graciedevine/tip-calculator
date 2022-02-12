@@ -86,43 +86,63 @@ h2 {
   margin-top: 1em;
 }
 
+.bill-head,
+.people-head,
+.tip-head {
+  position: relative;
+  left: 1em;
+}
+
+.people-head {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.tip-head {
+  margin-top: 0.5em;
+  left: 0.5em;
+}
+
 .bill-title {
   color: var(--darker-grayish-cyan);
+  position: relative;
+  left: 0.5em;
 }
 
-.dollar-sign {
-  justify-content: center;
+.dollar-sign,
+.people-sign {
+  position: relative;
 }
 
-.input-bill {
+.dollar-icon,
+.people-icon {
+  position: absolute;
+  padding: 0.5em;
+}
+
+.input-bill,
+.input-people {
   background-color: var(--lighter-grayish-cyan);
   border-radius: 5px;
-  width: 100%;
+  width: 90%;
+  padding-bottom: 1em;
+  color: var(--very-dark-cyan);
 }
 
 .tip-section {
   flex-direction: column;
   background-color: var(--very-dark-cyan);
   border-radius: 5px;
-}
-
-.tip-head {
-  margin-top: 0.5em;
+  width: 82%;
+  left: 2em;
+  position: relative;
+  padding: 1em 1em;
+  margin-bottom: 1em;
 }
 
 .tip-title {
   color: var(--white);
 }
-
-.input-people {
-  background-color: var(--lighter-grayish-cyan);
-  border-radius: 5px;
-  width: 100%;
-}
-
-/* .input-per-person {
-
-} */
 
 .tip-buttons {
   flex-direction: row;
@@ -160,11 +180,6 @@ h2 {
   padding: 0.5em 2em;
 }
 
-.people-head {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-}
-
 .reset {
   justify-content: center;
 }
@@ -178,14 +193,8 @@ h2 {
 }
 
 .attribution {
-  position: absolute;
-  bottom: 0.5rem;
-  left: 0;
-  right: 0;
-  height: auto;
-  width: 100vw;
-  font-size: 1rem;
-  text-align: center;
+  display: block;
+  margin-top: 1em;
 }
 
 .attribution a {
