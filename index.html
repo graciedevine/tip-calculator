@@ -32,8 +32,6 @@
             <h1 class="bill-title">Select Tip %</h1>
           </div>
           <div class="flex tip-buttons">
-            <!-- convert to radio buttons -->
-            <!-- use query selector three things input/output -->
             <a href="#" class="tip-button-five">5%</a>
             <a href="#" class="tip-button-ten">10%</a>
             <a href="#" class="tip-button">15%</a>
@@ -47,33 +45,38 @@
               <input type="text" class="input-people">
             </div>
           </div>
-
         </div>
-        <div class="flex tip-section">
-          <div class="flex-item tip-amount">
-            <h2 class="tip-title">Tip Amount <h2 class="per-person">/ person</h2></h2> 
-            <!-- placeholder, replace with an output bar? -->
-            <input type="text" class="input-per-person">
-          </div>
-          <div class="flex-item total-per-person">
-            <h2 class="tip-title">Total <h2 class="per-person">/ person</h2></h2>
-            <!-- placeholder, replace with an output bar? -->
-            <input type="text" class="input-per-person">
+        <div class="tip-section">
+          <div class="">
+            <div class="flex output-element">
+              <label for="tip-per-person" class="output-text">
+                <p>Tip Amount</p>
+                <p class="per-person">/ person</p>
+              </label>
+              <div class="tip-amount-output">
+                <input id="tip-per-person" type="text" class="output-display">
+              </div>
+            </div>
+            <div class="flex output-element">
+              <div class="output-text">
+                <h2 class="tip-title">Total</h2>
+                <h2 class="per-person">/ person</h2>
+              </div>
+              <div class="total-output">
+                <input type="text" class="output-display">
+              </div>
+            </div>
           </div>
           <div class="flex reset">
             <a href="#" class="reset-button">RESET</a>
           </div>
         </div>
       </div>
-
-
     </div>
 
   </main>
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/graciedevine/tip-calculator">Gracie</a>.</footer>
-    </div>
+  </div>
 </body>
-
-</html>

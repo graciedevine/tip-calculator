@@ -77,6 +77,7 @@ h2 {
   justify-content: center;
   flex-direction: column;
   margin-top: 1em;
+  align-items: center;
 }
 
 .bill-section {
@@ -124,31 +125,67 @@ h2 {
 .input-people[type="text"] {
   width: 90%;
   box-sizing: border-box;
-  border: 2px solid #ccc;
+  border: 2px var(--light-grayish-cyan);
   border-radius: 4px;
   color: var(--very-dark-cyan);
   font-size: 1rem;
   font-weight: 700;
-  background-color: white;
+  background-color: var(--lighter-grayish-cyan);
   background-image: url("images/icon-dollar.svg");
   background-position: 0.5em 0.5em;
   background-repeat: no-repeat;
   padding: 0.5em 0.5em 0.5em 2em;
+  text-align: right;
+  outline: none;
+}
+
+.input-bill[type="text"]:focus {
+  border: solid var(--strong-cyan);
+}
+
+.input-people[type="text"]:focus {
+  border: solid var(--strong-cyan);
 }
 
 .input-people[type="text"] {
   background-image: url("images/icon-person.svg");
 }
 
-.tip-section {
+/* .wrapper-outputs {
   flex-direction: column;
+} */
+
+.output-element {
+  flex-direction: row;
+}
+.output-text {
+  color: #fff;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  width: 50%;
+}
+.output-display {
+  height: 100%;
+  width: 100%;
+}
+
+.output-per-person {
+  width: 50%;
+}
+
+.tip-amount-output,
+.total-output {
+  width: 50%;
+  display: block;
+  position: relative;
+}
+
+.tip-section {
   background-color: var(--very-dark-cyan);
   border-radius: 5px;
   width: 82%;
-  left: 2em;
-  position: relative;
-  padding: 1em 1em;
-  margin-bottom: 1em;
+  padding: 1em;
 }
 
 .tip-title {
