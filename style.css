@@ -151,10 +151,6 @@ h2 {
   background-image: url("images/icon-person.svg");
 }
 
-/* .wrapper-outputs {
-  flex-direction: column;
-} */
-
 .output-element {
   flex-direction: row;
 }
@@ -186,6 +182,7 @@ h2 {
   border-radius: 5px;
   width: 82%;
   padding: 1em;
+  margin-bottom: 1em;
 }
 
 .tip-title {
@@ -238,6 +235,7 @@ h2 {
   padding: 1em 5em;
   border-radius: 5px;
   font-weight: 600;
+  margin-top: 1em;
 }
 
 .attribution {
@@ -247,4 +245,47 @@ h2 {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 609px) {
+  .tip-buttons {
+    margin-left: 1rem;
+  }
+  .tip-section {
+    width: 89%;
+  }
+}
+
+@media (min-width: 625px) {
+  .tip-buttons {
+    margin-left: 2em;
+  }
+}
+
+@media (min-width: 641px) {
+  .tip-buttons {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
+}
+
+@media (min-width: 657px) {
+  .tip-buttons {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
+
+@media (min-width: 673px) {
+  .tip-buttons {
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+  }
+}
+
+@media (min-width: 689px) {
+  .tip-buttons {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
 }
